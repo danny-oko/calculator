@@ -2,58 +2,39 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width= , initial-scale=1.0" />
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IOS Calculator Clone</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    
-        <div class="calc">
-          <div class="calc-top">
-            <div class="mac-dots">
-              <span class="mac-dot"></span>
-              <span class="mac-dot"></span>
-              <span class="mac-dot"></span>
-            </div>
-          </div>
+    <main class="calculator">
+      <input type="text" id="input" value="0" readonly />
 
-          <div class="screen">
-            <span id="num"></span>
-          </div>
+      <button class="btn btn-func">AC</button>
+      <button class="btn btn-func">C</button>
+      <button class="btn btn-func">÷</button>
+      <button class="btn btn-op">%</button>
 
-          <div class="keypad">
-            <!-- row 1 -->
-            <div class="btn btn-mid btn-small" id="funcionalBtn">⌫</div>
-            <div class="btn btn-mid" id="funcionalBtn">AC</div>
-            <div class="btn btn-mid" id="funcionalBtn">%</div>
-            <div class="btn btn-orange btn-operator" id="funcionalBtn">÷</div>
+      <button class="btn btn-num">7</button>
+      <button class="btn btn-num">8</button>
+      <button class="btn btn-num">9</button>
+      <button class="btn btn-op">×</button>
 
-            <!-- row 2 -->
-            <div class="btn btn-dark" id="numutton">7</div>
-            <div class="btn btn-dark" id="numutton">8</div>
-            <div class="btn btn-dark" id="numutton">9</div>
-            <div class="btn btn-orange btn-operator" id="funcionalBtn">×</div>
+      <button class="btn btn-num">4</button>
+      <button class="btn btn-num">5</button>
+      <button class="btn btn-num">6</button>
+      <button class="btn btn-op">−</button>
 
-            <!-- row 3 -->
-            <div class="btn btn-dark" id="numutton">4</div>
-            <div class="btn btn-dark" id="numutton">5</div>
-            <div class="btn btn-dark" id="numutton">6</div>
-            <div class="btn btn-orange btn-operator" id="funcionalBtn">−</div>
+      <button class="btn btn-num">1</button>
+      <button class="btn btn-num">2</button>
+      <button class="btn btn-num">3</button>
+      <button class="btn btn-op">+</button>
 
-            <!-- row 4 -->
-            <div class="btn btn-dark" id="numutton">1</div>
-            <div class="btn btn-dark" id="numutton">2</div>
-            <div class="btn btn-dark" id="numutton">3</div>
-            <div class="btn btn-orange btn-operator" id="funcionalBtn">+</div>
-
-            <!-- row 5 -->
-            <div class="btn btn-dark btn-small">+/−</div>
-            <div class="btn btn-dark btn-zero" id="numutton">0</div>
-            <div class="btn btn-dark" id="funcionalBtn">.</div>
-            <div class="btn btn-orange btn-operator" id="funcionalBtn">=</div>
-          </div>
-        </div>
-      <script src="app.js"></script>
-    </html>
+      <button class="btn btn-func">+/−</button>
+      <button class="btn btn-num btn-zero">0</button>
+      <button class="btn btn-num">.</button>
+      <button class="btn btn-op btn-eq">=</button>
+    </main>
   </body>
+  <script src="app.js"></script>
 </html>
