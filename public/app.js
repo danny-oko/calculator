@@ -37,8 +37,51 @@ funcButtons.forEach((func) => {
   });
 });
 
+// operator buttons: + − × ÷ %
 opButtons.forEach((btn) => {
   btn.addEventListener("click", () => {
-     
+    const op = btn.textContent;
+    const current = Number(input.value);
+
+    if (firstValue === null) {
+      firstValue = current;
+    } else if (!waitingSecondValue) {
+      firstValue = compute(firstValue, current, operator);
+      input.value = firstValue;
+    }
+
+    operator = op;
+    waitingSecondValue = true;
   });
 });
+
+// equals button: =
+equalBtn.addEventListener("click", () => {
+  if (!operator || firstValue === null) return;
+
+  const second = Number(input.value);
+  const result = compute(firstValue, second, operator);
+
+  input.value = result;
+  firstValue = result;
+  operator = null;
+  waitingSecondValue = true;
+});
+
+// tiny math brain
+function compute(a, b, op) {
+  switch (op) {
+    case "+":
+      return a + b;
+    case "−":
+      return a - b;
+    case "×":
+      return a * b;
+    case "÷":
+      return b === 0 ? "Error" : a / b;
+    case "%":
+      return a % b;
+    default:
+      return b;
+  }
+}
