@@ -7,34 +7,38 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <main class="calculator">
-      <input type="text" id="input" value="0" readonly />
+<main class="calculator">
+  <input type="text" id="input" value="0" readonly />
 
-      <button class="btn btn-func">AC</button>
-      <button class="btn btn-func">C</button>
-      <button class="btn btn-func">÷</button>
-      <button class="btn btn-op">%</button>
+  <button class="btn btn-func">AC</button>
+  <button class="btn btn-func">C</button>
+  <!-- ÷ should be an operator, not func -->
+  <button class="btn btn-op">÷</button>
+  <button class="btn btn-op">%</button>
 
-      <button class="btn btn-num">7</button>
-      <button class="btn btn-num">8</button>
-      <button class="btn btn-num">9</button>
-      <button class="btn btn-op">×</button>
+  <button class="btn btn-num">7</button>
+  <button class="btn btn-num">8</button>
+  <button class="btn btn-num">9</button>
+  <button class="btn btn-op">×</button>
 
-      <button class="btn btn-num">4</button>
-      <button class="btn btn-num">5</button>
-      <button class="btn btn-num">6</button> 
-      <button class="btn btn-op">−</button>
+  <button class="btn btn-num">4</button>
+  <button class="btn btn-num">5</button>
+  <button class="btn btn-num">6</button>
+  <!-- use normal "-" so it matches JS -->
+  <button class="btn btn-op">-</button>
 
-      <button class="btn btn-num">1</button>
-      <button class="btn btn-num">2</button>
-      <button class="btn btn-num">3</button>
-      <button class="btn btn-op">+</button>
+  <button class="btn btn-num">1</button>
+  <button class="btn btn-num">2</button>
+  <button class="btn btn-num">3</button>
+  <button class="btn btn-op">+</button>
 
-      <button class="btn btn-func">+/−</button>
-      <button class="btn btn-num btn-zero">0</button>
-      <button class="btn btn-num">.</button>
-      <button class="btn btn-op btn-eq">=</button>
-    </main>
+  <button class="btn btn-func">+/−</button>
+  <button class="btn btn-num btn-zero">0</button>
+  <button class="btn btn-num">.</button>
+  <!-- = should be FUNC, not OP -->
+  <button class="btn btn-func btn-eq">=</button>
+</main>
+
   </body>
   <script src="app.js"></script>
 </html>
