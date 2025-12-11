@@ -49,33 +49,21 @@ funcButtons.forEach((btn) => {
 opButtons.forEach((btn) => {
   btn.addEventListener("click", () => {
     const value = btn.textContent;
-
     if (value === "%") {
-      console.log("helo");
+      input.value += "%";
+    }
+    if (value === "×") {
+      input.value += "×";
+    }
+    if (value === "−") {
+      input.value += "−";
+    }
+    if (value === "+") {
+      input.value += "+";
+    }
+    if (value === "=") {
+      input.value = "=";
     }
   });
+  return btn.value;
 });
-
-// // function operation(a, b, op) {
-
-// // }
-
-// const ans = [];
-// var convertTemperature = function (celsius) {
-//   ans.push((kelvin = celsius + 273.15));
-//   ans.push((faranheit = celsius * 1.8 + 32.0));
-
-//   return ans;
-// };
-
-// console.log(convertTemperature(36.5));
-
-// let commonFactors = function (a, b) {
-//   let arr = [];
-//   for (let i = 1; i < a && i < b; i++) {
-//     if (a % 2 === 0 && b % 2 === 0) {
-//       console.log(i);
-//     }
-//   }
-// };
-// console.log(commonFactors(12, 8));
